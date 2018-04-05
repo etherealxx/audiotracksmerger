@@ -1,3 +1,5 @@
+## About
+
 This is a simple script to combine two of a video file's audio tracks into one.
 
 To make things even more simple, it prompts for an input/output video using file selectors.
@@ -7,4 +9,5 @@ This is a simple utility, meant to be handy for rapidly "fixing" videos with spl
 To use this script, simply copy/paste the "merge.ps1" code below into a new file named "merge.ps1", then launch it.
 
 If you're not interested in a full script, the important bit is:
+
 ```ffmpeg -i "$vid" -c:v copy -filter_complex "[0:1][0:2]amerge=inputs=2" -movflags faststart -y "$output"```
