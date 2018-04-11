@@ -65,6 +65,7 @@ if($output -eq ""){
 echo "Saving to $output"
 
 ffmpeg -i "$vid" -c:v copy -filter_complex "$($tracklist)amix=inputs=$($tracks.Length)" -movflags faststart -y "$output"
+#"amerge" is also an option if mixing fails.
 
 echo "Finished."
 
