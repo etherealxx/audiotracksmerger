@@ -27,7 +27,7 @@ $ui = ffprobe -show_entries stream=index,codec_type:stream_tags=language -of com
 	% {'{"'+ $_.replace('stream|','').replace("|",'", "').replace(":","-").replace("=",'":"') +'"}'} | # Convert to a JSON format via text-manipulation.
 	Select-String -Pattern 'audio' -AllMatches  | #Screen audio channels only.
 	ConvertFrom-Json | # Build object from JSON string
-	Out-gridView -PassThru | #Prompt
+	Out-gridView -PassThru -Title "Select which track(s) to merge (hold ctrl for multiple), then click 'OK' in the bottom right."| #Prompt
 	Select -ExpandProperty Index # Fetch 'Index' property.
 echo "$ui"
 
