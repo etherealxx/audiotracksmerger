@@ -64,7 +64,7 @@ if($output -eq ""){
 
 echo "Saving to $output"
 
-ffmpeg -i "$vid" -c:v copy -filter_complex "$($tracklist)amerge=inputs=$($tracks.Length)" -movflags faststart -y "$output"
+ffmpeg -i "$vid" -c:v copy -filter_complex "$($tracklist)amix=inputs=$($tracks.Length)" -movflags faststart -y "$output"
 
 echo "Finished."
 
