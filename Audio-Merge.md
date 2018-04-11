@@ -4,7 +4,7 @@ This is a simple script to combine two of a video file's audio tracks into one. 
 
 To make things even more simple, it only prompts for an input/output video using file selectors. The rest is handled automatically.
 
-This is a simple utility to rapidly "fix" videos with split audio tracks, such as those recorded by **ShadowPlay**.
+This is a simple utility to rapidly "fix" videos with split audio tracks, such as those recorded by **ShadowPlay** or **OBS**.
 
 To use this script, simply copy/paste the *"merge.ps1"* code below into a new file named *"merge.ps1"*, then launch it.
 
