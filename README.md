@@ -46,6 +46,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#example">Example</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -119,6 +120,20 @@ Or download the ffmpeg installer [here](https://github.com/icedterminal/ffmpeg-i
  -->
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
+
+
+## Example
+
+This is the original example video (Unmute the audio if you haven't). It's taken from [here](http://camendesign.com/code/video_for_everybody/test.html), but i edited it so that the video has 2 audio tracks, and every few seconds the audio switch between first track and second track (you can only hear the first track).
+<video src='https://user-images.githubusercontent.com/64251396/206025926-98067ae0-7500-4e6b-996e-1c125e492c6f.mp4' width=180/>
+
+This is the processed video, the first and second audio track is merged, so we can hear them both.
+<video src='https://user-images.githubusercontent.com/64251396/206026593-a4cc6221-23ed-45e0-ae84-37a83fae6ac6.mp4' width=180/>
+
+You can download the sample video [here](https://github.com/etherealxx/audiotracksmerger/raw/master/videos/big_buck_bunny.mp4).
+
+
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -166,5 +181,6 @@ Project Link: [https://github.com/etherealxx/audiotracksmerger](https://github.c
 * [README.md Template](https://github.com/othneildrew/Best-README-Template)
 * [ffmpeg Installer](https://github.com/icedterminal/ffmpeg-installer)
 * [bat2exe](https://github.com/islamadel/bat2exe)
+* ["Video For Everybody" Test Page](http://camendesign.com/code/video_for_everybody/test.html)
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
