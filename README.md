@@ -15,9 +15,11 @@
     <!-- <br /> -->
 <!--     <a href="https://github.com/etherealxx/audiotracksmerger">View Demo</a>  -->
 <!--    · -->
-    <a href="https://github.com/etherealxx/audiotracksmerger/releases/download/0.1.0/Audio.Tracks.Merger.exe">Download Executable (64-bit)</a>
+    <a href="https://github.com/etherealxx/audiotracksmerger/releases/download/v0.1.4/Audio.Tracks.Merger.ffmpeg.exe">Download Executable (64-bit)</a>
     ·
-    <a href="https://github.com/etherealxx/audiotracksmerger/releases/download/0.1.0/Audio.Tracks.Merger.bat">Download Batch Script (.bat)</a>
+    <a href="https://github.com/etherealxx/audiotracksmerger/releases/download/v0.1.4/Audio.Tracks.Merger.ffmpeg.x86.exe">32-bit</a>
+    ·
+    <a href="https://github.com/etherealxx/audiotracksmerger/releases/download/v0.1.4/Audio.Tracks.Merger.bat">Download Batch Script (.bat)</a>
     ·
     <a href="https://github.com/etherealxx/audiotracksmerger/issues">Report Bug</a>
     ·
@@ -76,6 +78,7 @@ TL;DR the ffmpeg command is `ffmpeg -i "input_file" -c:v copy -filter_complex "[
 * Windows Command Prompt
 * [Notepad++](https://github.com/notepad-plus-plus/notepad-plus-plus)
 * [Bat to Exe Converter](https://www.majorgeeks.com/files/details/bat_to_exe_converter.html)
+* [bat2exe](https://github.com/islamadel/bat2exe)
 
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
@@ -85,13 +88,17 @@ TL;DR the ffmpeg command is `ffmpeg -i "input_file" -c:v copy -filter_complex "[
 <!-- GETTING STARTED -->
 ## Using the App/Script
 
-Download the executable or the script [here](https://github.com/etherealxx/audiotracksmerger/releases)
+Download the executable or the script [here](https://github.com/etherealxx/audiotracksmerger/releases) <br />
+The `~ffmpeg` one are recommended.
 
 ### Prerequisites (Important!)
 
+If you choose the `~core` executable or using the .bat script: <br />
 Before you can run the executable/script, you need to install ffmpeg first and set the environment path variable. Here's a great tutorial to do it: https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-windows/
 
 Or you can download ffmpeg [here](https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.7z), extract it, and then copy `ffmpeg.exe` to the same directory as the executable/script.
+
+Or download the ffmpeg installer [here](https://github.com/icedterminal/ffmpeg-installer/releases/tag/5.1.0.20220727)
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
@@ -133,7 +140,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the GNU GPLv3 License. See `LICENSE.txt` for more information.
+Distributed under the GNU GPLv3 License. See `LICENSE.md` for more information.
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
@@ -154,7 +161,10 @@ Project Link: [https://github.com/etherealxx/audiotracksmerger](https://github.c
 ## Acknowledgments
 
 * [Original powershell script by shadowmoose](https://gist.github.com/shadowmoose/ae4df1e8617184c9f4fcf55382e9236b)
+* [ffmpeg](https://github.com/FFmpeg/FFmpeg)
 * [Accelerator font for the logo](https://fontesk.com/accelerator-font/)
 * [README.md Template](https://github.com/othneildrew/Best-README-Template)
+* [ffmpeg Installer](https://github.com/icedterminal/ffmpeg-installer)
+* [bat2exe](https://github.com/islamadel/bat2exe)
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
