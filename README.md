@@ -15,6 +15,10 @@
     <!-- <br /> -->
 <!--     <a href="https://github.com/etherealxx/audiotracksmerger">View Demo</a>  -->
 <!--    · -->
+    <a href="https://github.com/etherealxx/audiotracksmerger/releases/download/0.1.0/Audio.Tracks.Merger.exe">Download Executable (64-bit)</a>
+    ·
+    <a href="https://github.com/etherealxx/audiotracksmerger/releases/download/0.1.0/Audio.Tracks.Merger.bat">Download Batch Script (.bat)</a>
+    ·
     <a href="https://github.com/etherealxx/audiotracksmerger/issues">Report Bug</a>
     ·
     <a href="https://github.com/etherealxx/audiotracksmerger/issues">Request Feature</a>
@@ -34,9 +38,9 @@
       </ul>
     </li>
     <li>
-      <a href="#using-the-app/script">Using the App/Script</a>
+      <a href="#using-the-appscript">Using the App/Script</a>
       <ul>
-        <li><a href="#prerequisites-(important!)">Prerequisites (Important!)</a></li>
+        <li><a href="#prerequisites-important">Prerequisites (Important!)</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -63,7 +67,7 @@ The code are inspired from [this gist](https://gist.github.com/shadowmoose/ae4df
 (and actually the reason i made this repo is because his powershell script somehow doesn't work on my device :D) <br />
 TL;DR the ffmpeg command is `ffmpeg -i "input_file" -c:v copy -filter_complex "[0:1][0:2]amerge=inputs=2" -movflags faststart -y "output_file"`
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
@@ -74,14 +78,14 @@ TL;DR the ffmpeg command is `ffmpeg -i "input_file" -c:v copy -filter_complex "[
 * [Bat to Exe Converter](https://www.majorgeeks.com/files/details/bat_to_exe_converter.html)
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
 <!-- GETTING STARTED -->
 ## Using the App/Script
 
-Download the executable or the script [here](example.com)
+Download the executable or the script [here](https://github.com/etherealxx/audiotracksmerger/releases)
 
 ### Prerequisites (Important!)
 
@@ -89,7 +93,7 @@ Before you can run the executable/script, you need to install ffmpeg first and s
 
 Or you can download ffmpeg [here](https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.7z), extract it, and then copy `ffmpeg.exe` to the same directory as the executable/script.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
@@ -106,7 +110,7 @@ Or you can download ffmpeg [here](https://www.gyan.dev/ffmpeg/builds/ffmpeg-rele
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_
  -->
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -122,7 +126,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
@@ -131,7 +135,7 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the GNU GPLv3 License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
@@ -142,7 +146,7 @@ etherealxx - gwathon3@gmail.com
 
 Project Link: [https://github.com/etherealxx/audiotracksmerger](https://github.com/etherealxx/audiotracksmerger)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
@@ -153,4 +157,4 @@ Project Link: [https://github.com/etherealxx/audiotracksmerger](https://github.c
 * [Accelerator font for the logo](https://fontesk.com/accelerator-font/)
 * [README.md Template](https://github.com/othneildrew/Best-README-Template)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
