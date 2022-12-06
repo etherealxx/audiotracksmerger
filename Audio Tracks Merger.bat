@@ -1,39 +1,35 @@
-::[Bat To Exe Converter]
-::
-::YAwzoRdxOk+EWAjk
-::fBw5plQjdCyDJGyX8VAjFD5ARAGQOWq2OpET6/326uSTsXFcf+07cYHc5rKPNukQ5UuqfJUitg==
-::YAwzuBVtJxjWCl3EqQJgSA==
-::ZR4luwNxJguZRRnk
-::Yhs/ulQjdF+5
-::cxAkpRVqdFKZSDk=
-::cBs/ulQjdF+5
-::ZR41oxFsdFKZSDk=
-::eBoioBt6dFKZSDk=
-::cRo6pxp7LAbNWATEpCI=
-::egkzugNsPRvcWATEpCI=
-::dAsiuh18IRvcCxnZtBJQ
-::cRYluBh/LU+EWAnk
-::YxY4rhs+aU+IeA==
-::cxY6rQJ7JhzQF1fEqQJgZkoaHGQ=
-::ZQ05rAF9IBncCkqN+0xwdVsEAlXMbAs=
-::ZQ05rAF9IAHYFVzEqQIRPR9dQ0S2Lmq5DaZcxe3p6O+Vwg==
-::eg0/rx1wNQPfEVWB+kM9LVsJDCWXOGK1RoEO6evw/Kqqp18aUfBf
-::fBEirQZwNQPfEVWB+kM9LVsJDAWXOGK1Eqcd6+Po4u+VpUgPNA==
-::cRolqwZ3JBvQF1fEqQIdLQlTSUSPKWeuD6UQ7aj6+u6OrQ0JRuM8c5yb07rOIaAF40HhetYk2G5V2MQCCXs=
-::dhA7uBVwLU+EWFyQ/EciLRpYVBzi
-::YQ03rBFzNR3SWATElA==
-::dhAmsQZ3MwfNWATElA==
-::ZQ0/vhVqMQ3MEVWAtB9wSA==
-::Zg8zqx1/OA3MEVWAtB9wSA==
-::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFD5ARAGQOWq2OpET6/326uSTsXFcf+07cYHc5pWbJOkcqnH2dJUmxTp3ndkLCQkYNgrzOEZ6rHZH1g==
-::YB416Ek+ZG8=
-::
-::
-::978f952a14a936cc963da21a135fa983
-@echo off
+@echo on
 color 0b
 
+if exist C:\ffmpeg.exe set ffpath="C:" && goto found
+if exist C:\ffmpeg\ffmpeg.exe set ffpath="C:\ffmpeg" && goto found
+if exist C:\ffmpeg\bin\ffmpeg.exe set ffpath="C:\ffmpeg\bin" && goto found
+if exist "C:\Program Files\ffmpeg\bin\ffmpeg.exe" set ffpath="C:\Program Files\ffmpeg\bin" && goto found
+if exist "C:\Program Files\FFmpeg\bin\ffmpeg.exe" set ffpath="C:\Program Files\FFmpeg\bin" && goto found
+if exist "C:\Users\%USERNAME%\Downloads\ffmpeg.exe" set ffpath="C:\Users\%USERNAME%\Downloads" && goto found
+if exist "C:\Users\%USERNAME%\Downloads\ffmpeg\bin\ffmpeg.exe" set ffpath="C:\Users\%USERNAME%\Downloads\ffmpeg\bin" && goto found
+if exist "%cd%\ffmpeg.exe" set ffpath="%cd%" && goto found
+if exist C:\Windows\System32\ffmpeg.exe set ffpath="C:\Windows\System32" && goto found
+goto notfound
+
+:notfound
+@echo off
+echo -------------------------------------------------------
+echo ffmpeg not found
+echo make sure you install/download it first before you continue to use this script/app
+echo -------------------------------------------------------
+pause
+exit
+
+:found
+@echo off
+for %%F in ("%ffpath%") do set ffpathx=%%~F
+cls
+echo ffmpeg found in %ffpathx%
+goto intro
+
+:intro
+echo -------------------------------------------------------
 echo Audio Tracks Merger by etherealxx
 echo Inspired from a powershell script by shadowmoose
 echo Select your video file with more than one audio tracks:
@@ -65,14 +61,15 @@ echo -------------------------------------------------------
 pause
 color 0f
 
-ffmpeg -i "%filepath%" -c:v copy -filter_complex "[0:1][0:2]amerge=inputs=2" -movflags faststart -y "%filedrivepath%%filenameonly%_merged%fileext%"
+cd /d %ffpathx%
+ffmpeg.exe -i "%filepath%" -c:v copy -filter_complex "[0:1][0:2]amerge=inputs=2" -movflags faststart -y "%filedrivepath%%filenameonly%_merged%fileext%"
 
 echo.
 color 0b
 echo.
 echo -------------------------------------------------------
 echo Audio merged
-echo The filename is %filenameonly%_merged%fileext%
+echo The filename is "%filenameonly%_merged%fileext%"
 echo Located in %filedrivepath%
 echo If the output file isn't there, then the selected video only has one audio track
 echo -------------------------------------------------------

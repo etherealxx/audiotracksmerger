@@ -1,0 +1,10 @@
+How many false positive found on virustotal.com for each executables
+
+version 0.1.4
+
+	Audio Tracks Merger core.exe 7/72
+	Audio Tracks Merger coreadv.exe 6/71
+	Audio Tracks Merger ffmpeg.exe 0/69
+	Audio Tracks Merger.bat 0/61
+
+keep in mind all the executables I made here is not a virus. It's just a bat file contained in an exe file.
