@@ -8,18 +8,20 @@
 <h3 align="center">Audio Tracks Merger</h3>
 
   <p align="center">
-    Merges multiple audio tracks from a video into one. For Windows.
+    Merges multiple audio tracks from a video into one. For Windows & Linux.
     <br />
     <!-- <a href="https://github.com/etherealxx/audiotracksmerger"><strong>Explore the docs »</strong></a> -->
     <!-- <br /> -->
     <!-- <br /> -->
 <!--     <a href="https://github.com/etherealxx/audiotracksmerger">View Demo</a>  -->
 <!--    · -->
-    <a href="https://github.com/etherealxx/audiotracksmerger/releases/download/v0.1.4/Audio.Tracks.Merger.ffmpeg.exe">Download Executable (64-bit)</a>
+    <a href="https://github.com/etherealxx/audiotracksmerger/releases/download/v0.1.4/Audio.Tracks.Merger.ffmpeg.exe">Download Windows .exe (64-bit)</a>
     ·
-    <a href="https://github.com/etherealxx/audiotracksmerger/releases/download/v0.1.4/Audio.Tracks.Merger.ffmpeg.x86.exe">32-bit</a>
+    <a href="https://github.com/etherealxx/audiotracksmerger/releases/download/v0.1.4/Audio.Tracks.Merger.ffmpeg.x86.exe">Windows .exe (32-bit)</a>
     ·
-    <a href="https://github.com/etherealxx/audiotracksmerger/releases/download/v0.1.4/Audio.Tracks.Merger.bat">Download Batch Script (.bat)</a>
+    <a href="https://github.com/etherealxx/audiotracksmerger/releases/download/v0.1.4/audiotracksmerger.sh">Linux Bash Script (.sh)</a>
+    ·
+    <a href="https://github.com/etherealxx/audiotracksmerger/releases/download/v0.1.4/Audio.Tracks.Merger.bat">Windows Batch Script (.bat)</a>
     ·
     <a href="https://github.com/etherealxx/audiotracksmerger/issues">Report Bug</a>
     ·
@@ -94,12 +96,22 @@ The `~ffmpeg` one are recommended.
 
 ### Prerequisites (Important!)
 
+#### For Windows
+
 If you choose the `~core` executable or using the .bat script: <br />
 Before you can run the executable/script, you need to install ffmpeg first and set the environment path variable. Here's a great tutorial to do it: https://www.geeksforgeeks.org/how-to-install-ffmpeg-on-windows/
 
 Or you can download ffmpeg [here](https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.7z), extract it, and then copy `ffmpeg.exe` to the same directory as the executable/script.
 
 Or download the ffmpeg installer [here](https://github.com/icedterminal/ffmpeg-installer/releases/tag/5.1.0.20220727)
+
+#### For Linux
+
+Make sure `ffmpeg` and `zenity` is installed. (`zenity` is used for the file chooser UI)
+
+```bash
+sudo apt-get install zenity ffmpeg
+```
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
